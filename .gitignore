@@ -1,0 +1,44 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# --- Editor/OS cruft ---
+.vscode/
+.DS_Store
+
+# --- Large/generated data this repo produces or consumes ---
+# .alg mesh files (voxelised meshes, activation/vms outputs) - regenerable, often large
+*.alg
+
+# Cached fields, benchmark params, AP tables - regenerable from source data
+*.npy
+
+# Repo's own run-output directory conventions
+Meshes_*/
+Cache/
+Cache_*/
+Inferences_*/
+global_analysis*/
+mother_data/
+no_segments/
+fast_*/
+all_vms_plotting/
+CardiacPersonalizationStudyVtks/
+
+# Per-run working dirs (run_<params>/ pattern from main_*_revisit.py run_id)
+run_*/
+reg_*/
+
+# --- Your POP-HT-specific working data ---
+boundary_tags/
+*_with_fields.xdmf
+*_with_fields.h5
+*.xdmf
+*.h5
+
+# Local absolute-path configs / notebooks with machine-specific paths
+local_config*.py
