@@ -34,7 +34,7 @@ os.makedirs(SANITY_CHECK_DIR, exist_ok=True)
 
 DX = 2000          # must match the dx you voxelised at (um)
 # N_TRIES = 128
-N_TRIES = 256
+N_TRIES = 256 #1024 - on ARC
 N_ITERATIONS = 200
 # N_TRIES = 8         # small for a fast wiring test; real runs use 128-1024+
 N_PROCESSORS = 2

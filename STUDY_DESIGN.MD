@@ -15,7 +15,7 @@ absolute values.
 
 ---
 
-## Prerequisites (one-off, not per-patient)
+## Prerequisites (do in bulk for entire cohort)
 
 1. **Mesh voxelisation** — done. `voxelise.py` produces the `.alg` output with
    `surface_info_field` (LV/RV endocardial labels), `trans` (transmural coordinate),
